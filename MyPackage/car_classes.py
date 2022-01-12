@@ -32,5 +32,12 @@ class Car(General, Engine):
         Engine.__init__(self, size, fuel, supercharged)
 
 
+def this_module():
+    print('alpha')
+
+
 if __name__ == '__main__':
-    print('module')
+    this_module()
+
+if __name__ == 'MyPackage.car_classes':
+    pass
